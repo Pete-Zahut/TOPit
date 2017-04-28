@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>Development</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body id="myPage">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-blue"><i class="fa fa-home w3-margin-right"></i></a>
+            <a href="problem.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Problem Statement</a>
+            <a href="solutions.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Existing Solutions</a>
+            <a href="development.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Development</a>
+            <a href="study.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">User Study</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+            <a href="problem.html" class="w3-bar-item w3-button">Problem Statement</a>
+            <a href="solutions.html" class="w3-bar-item w3-button">Existing Solutions</a>
+            <a href="development.html" class="w3-bar-item w3-button">Development</a>
+            <a href="study.html" class="w3-bar-item w3-button">User Study</a>
+        </div>
+    </div>
+
+    <!-- Work Row -->
+    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+        <div class="w3-quarter">
+            <h2>Development</h2>
+            <p>Our development took place over a vew steps</p>
+        </div>
+
+        <div class="w3-quarter">
+            <div class="w3-card-2 w3-white">
+                <div class="w3-container">
+                    <h3>Research</h3>
+                    <h4>Scoping the playing field</h4>
+                    <p>We looked at popular fitness apps and looked at what we
+                    liked and what we didn't</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-quarter">
+            <div class="w3-card-2 w3-white">
+                <div class="w3-container">
+                    <h3>Brainstorming</h3>
+                    <h4>Getting ideas out there</h4>
+                    <p>As a group we all had different ideas on how to make
+                    our app so we threw out as many ideas as we could to see what stuck</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-quarter">
+            <div class="w3-card-2 w3-white">
+                <div class="w3-container">
+                    <h3>Prototyping and Testing</h3>
+                    <h4>Perfection comes from practice</h4>
+                    <p>We created some paper prototypes and tested using them
+                    and then modified our prototypes until we decided on a system
+                    that was easy to use and looked good to all of us</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Contact Container -->
+    <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+        <div class="w3-row">
+            <div class="w3-col m5">
+                <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Future Plans:</span></div>
+                <p>We hope to partner wih gyms to integrate our app with state of the art spatial tracking
+                to track the users movement in the court or on the field.</p>
+                <p>This would allow users to accurately measure their performance in games well as drills</p>
+                <p>This would also allow useres to follow along with the lessons in 3d and measure their movements
+                    so that the don't make bad habits. That way they learn it right the first time.</p>
+                <img src="images/tracking.png" alt="tracking">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+        <h4>Follow Us</h4>
+        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+        <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+        <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+            <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+        </div>
+    </footer>
+
+    <script>
+        // Script for side navigation
+        function w3_open() {
+            var x = document.getElementById("mySidebar");
+            x.style.width = "300px";
+            x.style.paddingTop = "10%";
+            x.style.display = "block";
+        }
+
+        // Close side navigation
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
